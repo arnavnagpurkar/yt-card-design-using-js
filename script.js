@@ -122,11 +122,10 @@ let monthsOld = 5;
 let duration = "31:20";
 let thumbnail = "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0alxLSXCSEPITzWr-XXUiv1oglQ";
 
-createCard(title, cName, views, monthsOld, duration, thumbnail);
-createCard(title, cName, views, monthsOld, duration, thumbnail);
-createCard(title, cName, views, monthsOld, duration, thumbnail);
-createCard(title, cName, views, monthsOld, duration, thumbnail);
-
+let runCard = document.getElementById('runfunc');
+runCard.addEventListener("click", function() {
+    createCard(title, cName, views, monthsOld, duration, thumbnail);
+});
 
 
 console.log('end of script.js')
